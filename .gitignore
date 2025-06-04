@@ -40,3 +40,5 @@ build/
 
 ### Python ###
 python3/__pycache__
+
+temp/*
