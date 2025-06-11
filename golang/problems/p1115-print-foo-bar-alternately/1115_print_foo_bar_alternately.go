@@ -1,4 +1,4 @@
-package problems
+package printfoobaralternately
 /*
  * @lc app=leetcode id=1115 lang=golang
  *
