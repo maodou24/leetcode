@@ -1,4 +1,4 @@
-package problems
+package solution
 
 func differenceOfSums(n int, m int) int {
 	var num1, num2 int

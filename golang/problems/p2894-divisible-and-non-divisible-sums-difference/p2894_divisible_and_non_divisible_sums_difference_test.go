@@ -1,4 +1,4 @@
-package problems
+package solution
 
 import (
 	"testing"
