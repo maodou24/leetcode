@@ -40,3 +40,23 @@ func NewLoopListNode(input []int, idx int) *base.ListNode {
 	head.Next = loop
 	return result
 }
+
+func IntSliceToBinaryTree(input []int) *base.TreeNode {
+	s := make([]int, len(input)+1)
+	copy(s[1:], input)
+	return binaryTree(s, 1)
+}
+
+func binaryTree(input []int, index int) *base.TreeNode {
+	if index < len(input) {
+		val := input[index]
+		if val >= 0 {
+			return &base.TreeNode{
+				Val:   input[index],
+				Left:  binaryTree(input, index*2),
+				Right: binaryTree(input, index*2+1),
+			}
+		}
+	}
+	return nil
+}
